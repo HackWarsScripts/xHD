@@ -1,15 +1,21 @@
 // ==UserScript==
 // @name         xHD Upgrade
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      2.0
 // @description  Upgrade remaining xHDDs to max
 // @author       exteraDev - Emin Afroz (Omega on HackerExperience)
-// @include      https://hackerwars.io/hardware?opt=xhd
+// @match        http://*.hackerwars.io/*
+// @match        http://hackerwars.io/*
+// @match        https://*.hackerwars.io/*
+// @match        https://hackerwars.io/*
+// @grant        GM_setValue
+// @grant        GM_getValue
+// @grant        GM_addStyle
 // @require      https://code.jquery.com/jquery-3.2.1.min.js
 // @icon         https://img.icons8.com/?size=96&id=FjJWt1R5XUiK&format=png
 // ==/UserScript==
 
-const account = 'ENTERACCHERE';
+const account = 'NumberWithout#';
 var total = $('.widget-content > ul > a').length;
 var index = 0;
 var interval;
